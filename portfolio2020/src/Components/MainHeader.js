@@ -10,7 +10,6 @@ const MainHeader = () => {
         <li>ABOUT</li>
         <li>PROJECTS</li>
         <li>CONTACT</li>
-        <li>LOGIN</li>
       </ul>
     </div>
   );
