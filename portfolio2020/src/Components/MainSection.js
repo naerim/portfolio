@@ -36,28 +36,6 @@ const PressDown = styled.div`
   color: white;
 `;
 
-const SelectBox = styled.div`
-  margin-top: 3%;
-  padding: 1%;
-  text-align: center;
-  float: center;
-`;
-
-const GameButton = styled.div`
-  background-color: rgba(0, 0, 0, 0);
-  padding: 5px 40px;
-  color: yellow;
-  border: solid yellow 3px;
-  font-size: 1.5rem;
-  border-radius: 7px;
-  margin: 30px 40%;
-  text-align: center;
-  &: hover {
-    background-color: rgba(150, 150, 150, 0.2);
-    font-size: 1.7rem;
-  }
-`;
-
 const MainSection = () => {
   return (
     <Contents>
@@ -72,11 +50,5 @@ const MainSection = () => {
     </Contents>
   );
 };
-
-// <SelectBox>
-//   <GameButton>ABOUT</GameButton>
-//   <GameButton>PROJECTS</GameButton>
-//   <GameButton>CONTACT</GameButton>
-// </SelectBox>
 
 export default MainSection;
