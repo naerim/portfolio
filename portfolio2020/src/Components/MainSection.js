@@ -15,7 +15,7 @@ const TitleBox = styled.div`
 const Title = styled.h1`
   color: white;
   margin: 0;
-  font-size: 3.5vw;
+  font-size: 7vw;
 `;
 
 const TitleName = styled.h1`
@@ -41,8 +41,8 @@ const MainSection = () => {
     <Contents>
       <IntroduceBox>
         <TitleBox>
-          <Title>Hi! I'm Developer &nbsp;</Title>
-          <TitleName> Kim Nae-Rim</TitleName>
+          <Title>Developer</Title>
+          <TitleName> <br/>Kim Nae-Rim</TitleName>
         </TitleBox>
         <Introduce>This is my portfolio website</Introduce>
         <PressDown>-> Press here to start</PressDown>
