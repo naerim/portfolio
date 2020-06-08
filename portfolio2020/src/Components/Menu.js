@@ -25,9 +25,15 @@ const LogoDiv = styled.div`
 `;
 
 const Hamburger = styled.div`
-  position: fixed;
+  display: none;
+  position: absolute;
   right: 30px;
-  top: 30px;
+  top: 15px;
+  font-size: 24px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const MenuUl = styled.ul`
@@ -35,6 +41,7 @@ const MenuUl = styled.ul`
   list-style: none;
   text-align: center;
   padding-left: 0;
+  display: "none";
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -103,9 +110,13 @@ const Menu = () => {
         <Menuitem green={true}>PROJECTS</Menuitem>
         <Menuitem red={true}>CONTACT</Menuitem>
       </MenuUl>
+
       <Hamburger>
-        <FontAwesomeIcon icon={faBars} color="white" />
+        <a href="#">
+          <FontAwesomeIcon icon={faBars} color="white" />
+        </a>
       </Hamburger>
+
     </MenuBox>
   );
 };
