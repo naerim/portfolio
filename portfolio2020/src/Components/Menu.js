@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import MainLogo from "./MainLogo";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MenuBox = styled.div`
+  margin: 0;
   padding: 10px 12px;
   display: flex;
   justify-content: space-between;
@@ -40,8 +41,6 @@ const MenuUl = styled.ul`
   display: flex;
   list-style: none;
   text-align: center;
-  padding-left: 0;
-  display: "none";
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -49,6 +48,7 @@ const MenuUl = styled.ul`
     width: 100%;
     padding: 0;
     margin: 0;
+    display: ${({ open }) => (open ? "none" : "block")};
   }
 `;
 
@@ -63,6 +63,8 @@ const Menuitem = styled.li`
   margin-left: 10px;
   
   @media (max-width: 768px) {
+    padding:  5px 0px;
+    margin: 0;
     width: 100%;
   }
 
@@ -97,7 +99,15 @@ const Menuitem = styled.li`
     `}
 `;
 
+const ATag = styled.a`
+  margin: 0;
+  text-decoration: none;
+  width: 100%;
+`;
+
 const Menu = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <MenuBox>
       <LogoDiv>
@@ -105,18 +115,21 @@ const Menu = () => {
         <h5>Developer Naerim</h5>
       </LogoDiv>
 
-      <MenuUl>
-        <Menuitem yellow={true}>ABOUT</Menuitem>
-        <Menuitem green={true}>PROJECTS</Menuitem>
-        <Menuitem red={true}>CONTACT</Menuitem>
+      <MenuUl open={open}>
+        <ATag>
+          <Menuitem yellow={true}>ABOUT</Menuitem>
+        </ATag>
+        <ATag href="/">
+          <Menuitem green={true}>PROJECTS</Menuitem>
+        </ATag>
+        <ATag href="/">
+          <Menuitem red={true}>CONTACT</Menuitem>
+        </ATag>
       </MenuUl>
-
-      <Hamburger>
-        <a href="#">
-          <FontAwesomeIcon icon={faBars} color="white" />
-        </a>
+        
+      <Hamburger onClick={() => setOpen(!open)}>
+        <FontAwesomeIcon icon={faBars} color="white" />
       </Hamburger>
-
     </MenuBox>
   );
 };

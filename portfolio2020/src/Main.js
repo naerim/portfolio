@@ -7,19 +7,22 @@ import styled from "styled-components";
 // background-size: cover;
 // background-repeat: no-repeat;
 // background-position: center center;
-
+// background-color: #000033;
+//   border-radius: 10px;
 const Background = styled.div`
-  background-color: #000033;
+  background: linear-gradient(to top, #1E90FF, #78EAFF);
+  margin: 0;
   width: 100%;
   height: 100vh;
-  border-radius: 10px;
 `;
 
 const Main = () => {
   return (
     <Background>
-      <MainHeader />
-      <MainSection />
+       <div>
+           <MainHeader />
+           <MainSection />
+       </div>
     </Background>
   );
 };

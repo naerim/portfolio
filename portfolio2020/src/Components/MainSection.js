@@ -21,11 +21,11 @@ const Title = styled.h1`
 const TitleName = styled.h1`
   color: yellow;
   margin: 0;
-  font-size: 3.5vw;
+  font-size: 4vw;
 `;
 
 const Introduce = styled.h4`
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   margin: 0;
   color: white;
 `;
@@ -44,7 +44,7 @@ const MainSection = () => {
           <Title>Developer</Title>
           <TitleName> <br/>Kim Nae-Rim</TitleName>
         </TitleBox>
-        <Introduce>This is my portfolio website</Introduce>
+        <Introduce>Hi! This is my portfolio website</Introduce>
         <PressDown>-> Press here to start</PressDown>
       </IntroduceBox>
     </Contents>
