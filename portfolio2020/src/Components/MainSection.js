@@ -1,30 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import titleFont from "../img/title.png";
 
-const Contents = styled.div`
-  padding-top: 7%;
-`;
+const Contents = styled.div``;
 const IntroduceBox = styled.div`
   text-align: center;
 `;
 
 const TitleBox = styled.div`
-  display: inline-box;
+  padding-top: 10px;
 `;
 
-const Title = styled.h1`
-  color: white;
-  margin: 0;
-  font-size: 7vw;
-`;
+const Title = styled.img`
+  width: 700px;
 
-const TitleName = styled.h1`
-  color: yellow;
-  margin: 0;
-  font-size: 4vw;
+  @media (max-width: 768px) {
+    padding-top: 10%;
+    width: 80vw;
+  }
 `;
 
 const Introduce = styled.h4`
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.5vw;
   margin: 0;
   color: white;
@@ -32,7 +30,6 @@ const Introduce = styled.h4`
 
 const PressDown = styled.div`
   font-size: 2vw;
-  margin-top: 7%;
   color: white;
 `;
 
@@ -41,11 +38,11 @@ const MainSection = () => {
     <Contents>
       <IntroduceBox>
         <TitleBox>
-          <Title>Developer</Title>
-          <TitleName> <br/>Kim Nae-Rim</TitleName>
+          <Title src={titleFont} alt="title" />
         </TitleBox>
-        <Introduce>Hi! This is my portfolio website</Introduce>
         <PressDown>-> Press here to start</PressDown>
+        <br/> <br/>
+        <Introduce>Hi! This is my portfolio website</Introduce>
       </IntroduceBox>
     </Contents>
   );
