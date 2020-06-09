@@ -5,20 +5,24 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MenuBox = styled.div`
-  margin: 0;
-  padding: 10px 12px;
+  position: fixed;
+  width: 100%;
+
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #6ee0ff;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #000033;
+    background-color: #6ee0ff;
   }
 `;
 
 const LogoDiv = styled.div`
+margin-left: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,11 +30,13 @@ const LogoDiv = styled.div`
 `;
 
 const Hamburger = styled.div`
+  cursor: pointer;
   display: none;
   position: absolute;
   right: 30px;
   top: 15px;
   font-size: 24px;
+
 
   @media (max-width: 768px) {
     display: block;
@@ -41,6 +47,7 @@ const MenuUl = styled.ul`
   display: flex;
   list-style: none;
   text-align: center;
+  margin-right: 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -107,6 +114,9 @@ const ATag = styled.a`
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
+  const toggleHamburger = () => {
+    setOpen(!open);
+  };
 
   return (
     <MenuBox>
@@ -116,7 +126,7 @@ const Menu = () => {
       </LogoDiv>
 
       <MenuUl open={open}>
-        <ATag>
+        <ATag href="/">
           <Menuitem yellow={true}>ABOUT</Menuitem>
         </ATag>
         <ATag href="/">
@@ -126,8 +136,8 @@ const Menu = () => {
           <Menuitem red={true}>CONTACT</Menuitem>
         </ATag>
       </MenuUl>
-        
-      <Hamburger onClick={() => setOpen(!open)}>
+
+      <Hamburger onClick={() => toggleHamburger()}>
         <FontAwesomeIcon icon={faBars} color="white" />
       </Hamburger>
     </MenuBox>
