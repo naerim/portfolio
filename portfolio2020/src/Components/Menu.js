@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import MainLogo from "./MainLogo";
+import MainLogo from "./Main/MainLogo";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+//  background-color: #6ee0ff;
 const MenuBox = styled.div`
   position: fixed;
   width: 100%;
@@ -12,7 +13,7 @@ const MenuBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #6ee0ff;
+
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -60,7 +61,7 @@ const MenuUl = styled.ul`
 `;
 
 const Menuitem = styled.li`
-  color: black;
+  color: white;
   list-style: none;
   float: center;
   text-align: center;
@@ -74,36 +75,6 @@ const Menuitem = styled.li`
     margin: 0;
     width: 100%;
   }
-
-  ${(props) =>
-    props.yellow &&
-    `
-      color: yellow;
-      
-      &:hover{
-      background-color: rgba(80,80,80,0.5);
-      }
-    `}
-    
-  ${(props) =>
-    props.green &&
-    `
-      color: green;
-      
-      &:hover{
-      background-color: rgba(80,80,80,0.5);
-      }
-    `}
-    
-  ${(props) =>
-    props.red &&
-    `
-      color: red;
-      
-      &:hover{
-      background-color: rgba(80,80,80,0.5);
-      }
-    `}
 `;
 
 const ATag = styled.a`
@@ -127,13 +98,13 @@ const Menu = () => {
 
       <MenuUl open={open}>
         <ATag href="/">
-          <Menuitem yellow={true}>ABOUT</Menuitem>
+          <Menuitem>ABOUT</Menuitem>
         </ATag>
         <ATag href="/">
-          <Menuitem green={true}>PROJECTS</Menuitem>
+          <Menuitem>PROJECTS</Menuitem>
         </ATag>
         <ATag href="/">
-          <Menuitem red={true}>CONTACT</Menuitem>
+          <Menuitem>CONTACT</Menuitem>
         </ATag>
       </MenuUl>
 
