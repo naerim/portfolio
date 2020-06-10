@@ -4,6 +4,7 @@ import About from "./About";
 import MainFooter from "./Components/Main/MainFooter";
 import Projects from "./Projects";
 import styled from "styled-components";
+import Contact from "./Contact";
 
 const Background = styled.div`
   background-image: url("https://github.com/naerim/portfolio/blob/master/portfolio2020/src/img/cloud.png?raw=true");
@@ -21,6 +22,7 @@ function App() {
         <Main />
         <About />
         <Projects />
+        <Contact />
         <MainFooter />
       </Background>
     </div>
