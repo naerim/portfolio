@@ -14,16 +14,14 @@ const MenuBox = styled.div`
   justify-content: space-between;
   align-items: center;
 
-
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #6ee0ff;
   }
 `;
 
 const LogoDiv = styled.div`
-margin-left: 20px;
+  margin-left: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +35,6 @@ const Hamburger = styled.div`
   right: 30px;
   top: 15px;
   font-size: 24px;
-
 
   @media (max-width: 768px) {
     display: block;
@@ -66,12 +63,12 @@ const Menuitem = styled.li`
   float: center;
   text-align: center;
   font-size: 1rem;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   text-decoration: none;
   margin-left: 10px;
-  
+
   @media (max-width: 768px) {
-    padding:  5px 0px;
+    padding: 5px 0px;
     margin: 0;
     width: 100%;
   }
