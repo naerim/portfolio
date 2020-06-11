@@ -25,7 +25,7 @@ const LogoDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #FFF0F0;
 `;
 
 const Hamburger = styled.div`
@@ -58,7 +58,7 @@ const MenuUl = styled.ul`
 `;
 
 const Menuitem = styled.li`
-  color: white;
+  color: #FFF0F0;
   list-style: none;
   float: center;
   text-align: center;
@@ -81,7 +81,7 @@ const ATag = styled.a`
 `;
 
 const Menu = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toggleHamburger = () => {
     setOpen(!open);
   };
@@ -106,7 +106,7 @@ const Menu = () => {
       </MenuUl>
 
       <Hamburger onClick={() => toggleHamburger()}>
-        <FontAwesomeIcon icon={faBars} color="white" />
+        <FontAwesomeIcon icon={faBars} color="#FFF0F0" />
       </Hamburger>
     </MenuBox>
   );

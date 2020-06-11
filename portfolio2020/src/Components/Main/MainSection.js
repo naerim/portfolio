@@ -11,9 +11,16 @@ const TitleBox = styled.div`
 `;
 
 const Title = styled.h1`
+  margin: 0;
   font-size: 4rem;
   text-shadow: 5px 5px 0 red;
-  color: white;
+  color: #fff0f0;
+
+  ${(props) =>
+    props.green &&
+    `
+    text-shadow: 5px 5px 0 green;
+  `}
 `;
 
 const Introduce = styled.h4`
@@ -22,11 +29,18 @@ const Introduce = styled.h4`
   font-size: 1.5vw;
   margin: 0;
   color: white;
+  
 `;
 
 const PressDown = styled.div`
-  font-size: 2vw;
+  margin: 70px 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: white;
+  
+    &:hover {
+    font-size: 1.7rem;
+  }
 `;
 
 const MainSection = () => {
@@ -35,6 +49,7 @@ const MainSection = () => {
       <IntroduceBox>
         <TitleBox>
           <Title>Developer</Title>
+          <Title green={true}>Kim-Naerim</Title>
         </TitleBox>
         <PressDown>-> Press here to start</PressDown>
         <Introduce>Hi! This is my portfolio website</Introduce>
