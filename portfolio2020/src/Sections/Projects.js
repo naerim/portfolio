@@ -1,7 +1,7 @@
 import React from "react";
-import ProjectHeader from "./Components/Project/ProjectHeader";
+import ProjectHeader from "../Components/Project/ProjectHeader";
 import styled from "styled-components";
-import ProjectSection from "./Components/Project/ProjectSection";
+import ProjectSection from "../Components/Project/ProjectSection";
 
 const ProjectDiv = styled.div`
 

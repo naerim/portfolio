@@ -1,7 +1,7 @@
 import React from "react";
-import AboutHeader from "./Components/About/AboutHeader";
-import AboutSection1 from "./Components/About/AboutSection1";
-import AboutSection2 from "./Components/About/AboutSection2";
+import AboutHeader from "../Components/About/AboutHeader";
+import AboutSection1 from "../Components/About/AboutSection1";
+import AboutSection2 from "../Components/About/AboutSection2";
 import styled from "styled-components";
 
 const AboutDiv = styled.div`

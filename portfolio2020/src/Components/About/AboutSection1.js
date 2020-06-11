@@ -1,9 +1,20 @@
 import React from "react";
+import styled from "styled-components";
+
+const About = styled.section`
+  margin: 10px 50px;
+`;
+
+const AboutDiv = styled.div`
+  width: 100%;
+  background-color: red;
+  height: 80vh;
+`;
 
 const AboutSection1 = () => {
   return (
-    <section className="About">
-      <div className="AboutContents">
+    <About>
+      <AboutDiv>
         <div className="Title">
           <h2>ABOUT</h2>
         </div>
@@ -26,8 +37,8 @@ const AboutSection1 = () => {
             <h4>안녕하세요. 저는 개발자 김내림입니다.</h4>
           </div>
         </div>
-      </div>
-    </section>
+      </AboutDiv>
+    </About>
   );
 };
 

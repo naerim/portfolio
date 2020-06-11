@@ -37,7 +37,6 @@ const MainSection = () => {
           <Title>Developer</Title>
         </TitleBox>
         <PressDown>-> Press here to start</PressDown>
-        <br /> <br />
         <Introduce>Hi! This is my portfolio website</Introduce>
       </IntroduceBox>
     </Contents>
