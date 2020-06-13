@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MainLogo from "./Main/MainLogo";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MenuData from "../Data/menuData";
 
 //  background-color: #6ee0ff;
 const MenuBox = styled.div`
@@ -57,23 +58,6 @@ const MenuUl = styled.ul`
   }
 `;
 
-const Menuitem = styled.li`
-  color: #FFF0F0;
-  list-style: none;
-  float: center;
-  text-align: center;
-  font-size: 1rem;
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-left: 10px;
-
-  @media (max-width: 768px) {
-    padding: 5px 0px;
-    margin: 0;
-    width: 100%;
-  }
-`;
-
 const ATag = styled.a`
   margin: 0;
   text-decoration: none;
@@ -95,13 +79,7 @@ const Menu = () => {
 
       <MenuUl open={open}>
         <ATag href="/">
-          <Menuitem>ABOUT</Menuitem>
-        </ATag>
-        <ATag href="/">
-          <Menuitem>PROJECTS</Menuitem>
-        </ATag>
-        <ATag href="/">
-          <Menuitem>CONTACT</Menuitem>
+          <MenuData/>
         </ATag>
       </MenuUl>
 
