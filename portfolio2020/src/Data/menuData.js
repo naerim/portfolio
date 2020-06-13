@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+const ATag = styled.a`
+  margin: 0;
+  text-decoration: none;
+  width: 100%;
+`;
+
 const Menuitem = styled.li`
-  color: #FFF0F0;
+  color: #fff0f0;
   list-style: none;
   float: center;
   text-align: center;
@@ -20,7 +26,11 @@ const Menuitem = styled.li`
 
 const MenuData = () => {
   const Menu = ["ABOUT", "PROJECTS", "CONTACT"];
-  return Menu.map((menu) => (<Menuitem>{menu}</Menuitem>));
+  return Menu.map((menu) => (
+    <ATag href="/">
+      <Menuitem>{menu}</Menuitem>
+    </ATag>
+  ));
 };
 
 export default MenuData;

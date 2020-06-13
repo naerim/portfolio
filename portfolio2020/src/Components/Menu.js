@@ -26,7 +26,7 @@ const LogoDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFF0F0;
+  color: #fff0f0;
 `;
 
 const Hamburger = styled.div`
@@ -58,12 +58,6 @@ const MenuUl = styled.ul`
   }
 `;
 
-const ATag = styled.a`
-  margin: 0;
-  text-decoration: none;
-  width: 100%;
-`;
-
 const Menu = () => {
   const [open, setOpen] = useState(true);
   const toggleHamburger = () => {
@@ -78,9 +72,7 @@ const Menu = () => {
       </LogoDiv>
 
       <MenuUl open={open}>
-        <ATag href="/">
-          <MenuData/>
-        </ATag>
+        <MenuData />
       </MenuUl>
 
       <Hamburger onClick={() => toggleHamburger()}>
