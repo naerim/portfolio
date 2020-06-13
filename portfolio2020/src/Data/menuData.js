@@ -25,14 +25,24 @@ const Menuitem = styled.li`
 `;
 
 const MenuData = () => {
-  const Menu = ["ABOUT", "PROJECTS", "CONTACT"];
-  const Link = (index) => {
-    return index === 0 && "http://www.naver.com";
-  };
+  const Menu = [
+    {
+      page: "ABOUT",
+      link: "/",
+    },
+    {
+      page: "PROJECTS",
+      link: "/",
+    },
+    {
+      page: "CONTACT",
+      link: "/",
+    }
+  ];
 
-  return Menu.map((menu, key) => (
-    <ATag href={Link(key)}>
-      <Menuitem>{menu}</Menuitem>
+  return Menu.map(({page, link}) => (
+    <ATag href={link}>
+      <Menuitem>{page}</Menuitem>
     </ATag>
   ));
 };
