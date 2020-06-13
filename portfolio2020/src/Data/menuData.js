@@ -26,8 +26,12 @@ const Menuitem = styled.li`
 
 const MenuData = () => {
   const Menu = ["ABOUT", "PROJECTS", "CONTACT"];
-  return Menu.map((menu) => (
-    <ATag href="/">
+  const Link = (index) => {
+    return index === 0 && "http://www.naver.com";
+  };
+
+  return Menu.map((menu, key) => (
+    <ATag href={Link(key)}>
       <Menuitem>{menu}</Menuitem>
     </ATag>
   ));

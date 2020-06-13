@@ -5,7 +5,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MenuData from "../Data/menuData";
 
-//  background-color: #6ee0ff;
 const MenuBox = styled.div`
   position: fixed;
   width: 100%;
