@@ -28,7 +28,7 @@ const Introduce = styled.h4`
   align-items: center;
   font-size: 1.5vw;
   margin: 0;
-  color: white;
+  color: black;
   
 `;
 
@@ -36,7 +36,7 @@ const PressDown = styled.div`
   margin: 70px 0px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: dark-blue;
   
     &:hover {
     font-size: 1.7rem;
@@ -49,7 +49,7 @@ const MainSection = () => {
       <IntroduceBox>
         <TitleBox>
           <Title>Developer</Title>
-          <Title green={true}>Kim-Naerim</Title>
+          <Title green={true}>Kim-NaeRim</Title>
         </TitleBox>
         <PressDown>-> Press here to start</PressDown>
         <Introduce>Hi! This is my portfolio website</Introduce>
