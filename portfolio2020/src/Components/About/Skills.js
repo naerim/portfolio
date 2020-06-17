@@ -2,18 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 const SkillsSection = styled.section`
+  height: 100px;
   margin: 10px 50px;
+    display: inline-block;
 `;
 
-const Skills = styled.div`
+const SkillDiv = styled.div`
   width: 100%;
-  background-color: red;
+  background-color: purple;
 `;
 
-const AboutSection2 = () => {
+const Skills = () => {
   return (
     <SkillsSection>
-      <Skills>
+      <SkillDiv>
         <div className="CPlusPlus">
           <h3>C++</h3>
           <div> </div>
@@ -38,9 +40,9 @@ const AboutSection2 = () => {
           <h3>React</h3>
           <div> </div>
         </div>
-      </Skills>
+      </SkillDiv>
     </SkillsSection>
   );
 };
 
-export default AboutSection2;
+export default Skills;
