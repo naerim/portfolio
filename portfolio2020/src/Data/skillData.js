@@ -1,33 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-const ATag = styled.a`
-  margin: 0;
-  text-decoration: none;
-  width: 100%;
+const SkillDiv = styled.div`
+  width: 80vw;
+  display: flex;
 `;
 
 const SkillName = styled.div`
+  float: center;
+  text-align: center;
+  width: 10%;
 `;
 
 const SkillLevel = styled.div`
-`;
-
-const Menuitem = styled.li`
-  color: #fff0f0;
-  list-style: none;
-  float: center;
-  text-align: center;
-  font-size: 1rem;
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-left: 10px;
-
-  @media (max-width: 768px) {
-    padding: 5px 0px;
-    margin: 0;
-    width: 100%;
-  }
+  margin: 20px;
+  background: yellow;
+  width: ${(props) => props.width || 10}%;
 `;
 
 const SkillData = () => {
@@ -59,9 +47,12 @@ const SkillData = () => {
   ];
 
   return Skills.map(({ name, width }) => (
-    <SkillName><h1>{name}</h1>
-      <SkillLevel> </SkillLevel>
-    </SkillName>
+    <SkillDiv>
+      <SkillName>
+        <h1>{name}</h1>
+      </SkillName>
+      <SkillLevel width={width}> dd</SkillLevel>
+    </SkillDiv>
   ));
 };
 
