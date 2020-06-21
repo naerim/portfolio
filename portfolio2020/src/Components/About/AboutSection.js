@@ -10,7 +10,7 @@ const About = styled.section`
 const AboutDiv = styled.div`
   width: 100%;
   background-color: red;
-  height: 80vh;
+  height: 850px;
 `;
 
 const AboutBox = styled.div`
@@ -47,6 +47,10 @@ const LevelBox = styled.div`
   height: 15px;
 `;
 
+const SkillBox = styled.div`
+  display: inline-block;
+`;
+
 const AboutSection = () => {
   return (
     <About>
@@ -70,7 +74,11 @@ const AboutSection = () => {
             </div>
           </IntroduceBox>
         </AboutBox>
-        <Skills />
+
+        <SkillBox>
+          <h1>SKills</h1>
+          <Skills />
+        </SkillBox>
       </AboutDiv>
     </About>
   );
