@@ -5,10 +5,10 @@ import SkillData from "../../Data/skillData";
 const SkillsSection = styled.section`
   height: 100px;
   margin: 10px 50px;
-  display: inline-block;
 `;
 
 const SkillDiv = styled.div`
+  display: inline-block;
   width: 100%;
   background-color: purple;
 `;

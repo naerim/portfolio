@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const SkillDiv = styled.div`
-  width: 80vw;
+  width: 100%;
   display: flex;
 `;
 
 const SkillName = styled.div`
+  width: 15%;
   float: center;
   text-align: center;
-  width: 10%;
 `;
 
 const SkillLevel = styled.div`
@@ -51,7 +51,7 @@ const SkillData = () => {
       <SkillName>
         <h1>{name}</h1>
       </SkillName>
-      <SkillLevel width={width}> dd</SkillLevel>
+      <SkillLevel width={width}> </SkillLevel>
     </SkillDiv>
   ));
 };

@@ -33,6 +33,7 @@ const IntroduceBox = styled.div`
   margin: 20px;
   background-color: green;
   display: inline-block;
+  width: 70%;
 `;
 
 const LevelDiv = styled.div`
@@ -47,8 +48,11 @@ const LevelBox = styled.div`
   height: 15px;
 `;
 
+// 문제점: 가로길이 710이하는 AboutDiv 영역 넘어감
 const SkillBox = styled.div`
-  display: inline-block;
+  text-align: center;
+  align-items: center;
+  display: block;
 `;
 
 const AboutSection = () => {
@@ -70,7 +74,7 @@ const AboutSection = () => {
               <img src="#" alt="HPMP" />
             </div>
             <div className="Introduce">
-              <h4>안녕하세요. 저는 개발자 김내림입니다.</h4>
+              <h4>안녕하세요. 저는 개발자 김내림입니다. 현재 서울여자대학교 3학년에 재학중입니다.</h4>
             </div>
           </IntroduceBox>
         </AboutBox>
