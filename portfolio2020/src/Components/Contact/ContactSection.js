@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ContactData from "../../Data/contactData";
 
 const Contact = styled.section`
   margin: 10px 50px;
@@ -7,14 +8,18 @@ const Contact = styled.section`
 
 const ContactDiv = styled.div`
   width: 100%;
-  background-color: red;
-  height: 80vh;
+  height: 60vh;
+  padding: 10px;
+  display: flex;
+  background: red;
 `;
 
 const ContactSection = () => {
   return (
     <Contact>
-      <ContactDiv>내용</ContactDiv>
+      <ContactDiv>
+        <ContactData />
+      </ContactDiv>
     </Contact>
   );
 };
