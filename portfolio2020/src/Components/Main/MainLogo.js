@@ -3,11 +3,13 @@ import styled from "styled-components";
 import Logo from "../../img/logo.png";
 
 const ImgBox = styled.div`
-  width: 40px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 `;
 const Img = styled.img`
   width: 100%;
-  float: center;
+  height: 100%;
 `;
 
 const MainLogo = () => {
