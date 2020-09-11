@@ -2,20 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const ATag = styled.a`
-  margin: 0;
   text-decoration: none;
   width: 100%;
 `;
 
 const Menuitem = styled.li`
-  color: #fff0f0;
+  color: #B2C22B;
   list-style: none;
   float: center;
   text-align: center;
   font-size: 1rem;
-  padding: 5px 10px;
   text-decoration: none;
-  margin-left: 10px;
 
   @media (max-width: 768px) {
     padding: 5px 0px;
@@ -27,14 +24,17 @@ const Menuitem = styled.li`
 const MenuData = () => {
   const Menu = [
     {
+      key: 1,
       page: "ABOUT",
       link: "/",
     },
     {
+      key: 2,
       page: "PROJECTS",
       link: "/",
     },
     {
+      key: 3,
       page: "CONTACT",
       link: "/",
     }
