@@ -30,14 +30,19 @@ const MenuData = () => {
     },
     {
       key: 2,
-      page: "PROJECTS",
+      page: "SKILLS",
       link: "/",
     },
     {
       key: 3,
+      page: "PROJECTS",
+      link: "/",
+    },
+    {
+      key: 4,
       page: "CONTACT",
       link: "/",
-    }
+    },
   ];
 
   return Menu.map(({page, link}) => (

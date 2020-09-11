@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MenuData from "../Data/menuData";
+import MainLogo from "./Main/MainLogo";
 
 const MenuBox = styled.div`
   position: fixed;
@@ -12,6 +13,20 @@ const MenuBox = styled.div`
     flex-direction: column;
     align-items: flex-start;
   }
+`;
+
+const LogoBox = styled.div`
+  width: 100%;
+  margin-top: 10px;
+`;
+
+const IntroduceBox = styled.h1`
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 `;
 
 const Hamburger = styled.div`
@@ -30,8 +45,10 @@ const Hamburger = styled.div`
 const MenuUl = styled.ul`
   display: flex;
   list-style: none;
+  width: 500px;
+  padding: 0;
   text-align: center;
-  margin: 30px 30%;
+  margin: 10px auto;
   justify-content: space-between;
 
   @media (max-width: 768px) {
@@ -52,8 +69,12 @@ const Menu = () => {
 
   return (
     <MenuBox>
+      <LogoBox>
+        <MainLogo />
+      </LogoBox>
+      <IntroduceBox>Developer Naerim</IntroduceBox>
       <MenuUl open={open}>
-          <MenuData />
+        <MenuData />
       </MenuUl>
 
       <Hamburger onClick={() => toggleHamburger()}>
