@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Menu from "../Components/Menu";
+import MainContent from "../MainContent";
 
 const Main = () => {
   return (
     <MainContainer>
-        <Menu/>
+      <Menu />
+      <MainContent/>
     </MainContainer>
   );
 };

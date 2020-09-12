@@ -6,7 +6,6 @@ import MenuData from "../Data/menuData";
 import MainLogo from "./Main/MainLogo";
 
 const MenuBox = styled.div`
-  position: fixed;
   width: 100%;
   padding: 10px 0px;
   @media (max-width: 768px) {
